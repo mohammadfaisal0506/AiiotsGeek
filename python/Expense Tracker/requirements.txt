@@ -1,0 +1,20 @@
+# =========================
+# Backend (FastAPI API)
+# =========================
+fastapi
+uvicorn[standard]
+pydantic
+email-validator
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+pymongo
+python-multipart
+
+# =========================
+# Frontend (Streamlit App)
+# =========================
+streamlit
+requests
+pandas
+plotly

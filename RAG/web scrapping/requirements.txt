@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+httpx
+beautifulsoup4
+trafilatura
+playwright
+langchain
+openai
+sentence-transformers
+faiss-cpu
+numpy
+pydantic
+python-dotenv
+requests
+tqdm
+gunicorn
