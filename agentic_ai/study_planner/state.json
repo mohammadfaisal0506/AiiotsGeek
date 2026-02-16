@@ -1,217 +1,70 @@
 {
-  "goal": "OOPS",
+  "goal": "Kashmir history",
   "days": 30,
   "plan": {
     "topics": [
       {
-        "name": "Here is a structured study plan for OOPS (Object-Oriented Programming Systems)",
-        "days": 30,
+        "name": "Ancient Kashmir",
+        "days": 7,
         "resources": {
-          "youtube": [
-            "https://www.youtube.com/results?search_query=Here+is+a+structured+study+plan+for+OOPS+(Object-Oriented+Programming+Systems)+tutorial",
-            "https://www.youtube.com/results?search_query=Here+is+a+structured+study+plan+for+OOPS+(Object-Oriented+Programming+Systems)+full+course"
-          ],
           "documentation": [
-            "https://www.google.com/search?q=Here+is+a+structured+study+plan+for+OOPS+(Object-Oriented+Programming+Systems)+official+documentation",
-            "https://www.google.com/search?q=Here+is+a+structured+study+plan+for+OOPS+(Object-Oriented+Programming+Systems)+study+notes+pdf"
+            "https://www.google.com/search?q=Ancient+Kashmir+academic+notes+pdf",
+            "https://www.google.com/search?q=Ancient+Kashmir+textbook+chapter",
+            "https://www.google.com/search?q=Ancient+Kashmir+university+lecture+notes"
           ]
         },
         "subtopics": [
-          {
-            "name": "Variables and Data Types",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Variables+and+Data+Types+tutorial",
-                "https://www.youtube.com/results?search_query=Variables+and+Data+Types+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Variables+and+Data+Types+official+documentation",
-                "https://www.google.com/search?q=Variables+and+Data+Types+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Control Structures",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Control+Structures+tutorial",
-                "https://www.youtube.com/results?search_query=Control+Structures+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Control+Structures+official+documentation",
-                "https://www.google.com/search?q=Control+Structures+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Functions and Modules",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Functions+and+Modules+tutorial",
-                "https://www.youtube.com/results?search_query=Functions+and+Modules+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Functions+and+Modules+official+documentation",
-                "https://www.google.com/search?q=Functions+and+Modules+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Classes and Objects",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Classes+and+Objects+tutorial",
-                "https://www.youtube.com/results?search_query=Classes+and+Objects+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Classes+and+Objects+official+documentation",
-                "https://www.google.com/search?q=Classes+and+Objects+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Inheritance and Polymorphism",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Inheritance+and+Polymorphism+tutorial",
-                "https://www.youtube.com/results?search_query=Inheritance+and+Polymorphism+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Inheritance+and+Polymorphism+official+documentation",
-                "https://www.google.com/search?q=Inheritance+and+Polymorphism+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Encapsulation and Abstraction",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Encapsulation+and+Abstraction+tutorial",
-                "https://www.youtube.com/results?search_query=Encapsulation+and+Abstraction+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Encapsulation+and+Abstraction+official+documentation",
-                "https://www.google.com/search?q=Encapsulation+and+Abstraction+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Singleton Pattern",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Singleton+Pattern+tutorial",
-                "https://www.youtube.com/results?search_query=Singleton+Pattern+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Singleton+Pattern+official+documentation",
-                "https://www.google.com/search?q=Singleton+Pattern+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Factory Pattern",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Factory+Pattern+tutorial",
-                "https://www.youtube.com/results?search_query=Factory+Pattern+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Factory+Pattern+official+documentation",
-                "https://www.google.com/search?q=Factory+Pattern+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Observer Pattern",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Observer+Pattern+tutorial",
-                "https://www.youtube.com/results?search_query=Observer+Pattern+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Observer+Pattern+official+documentation",
-                "https://www.google.com/search?q=Observer+Pattern+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "TryCatch Blocks",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=TryCatch+Blocks+tutorial",
-                "https://www.youtube.com/results?search_query=TryCatch+Blocks+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=TryCatch+Blocks+official+documentation",
-                "https://www.google.com/search?q=TryCatch+Blocks+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Error Types and Messages",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Error+Types+and+Messages+tutorial",
-                "https://www.youtube.com/results?search_query=Error+Types+and+Messages+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Error+Types+and+Messages+official+documentation",
-                "https://www.google.com/search?q=Error+Types+and+Messages+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Throwing and Catching Exceptions",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Throwing+and+Catching+Exceptions+tutorial",
-                "https://www.youtube.com/results?search_query=Throwing+and+Catching+Exceptions+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Throwing+and+Catching+Exceptions+official+documentation",
-                "https://www.google.com/search?q=Throwing+and+Catching+Exceptions+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Thread Creation and Management",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Thread+Creation+and+Management+tutorial",
-                "https://www.youtube.com/results?search_query=Thread+Creation+and+Management+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Thread+Creation+and+Management+official+documentation",
-                "https://www.google.com/search?q=Thread+Creation+and+Management+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Synchronization Techniques",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Synchronization+Techniques+tutorial",
-                "https://www.youtube.com/results?search_query=Synchronization+Techniques+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Synchronization+Techniques+official+documentation",
-                "https://www.google.com/search?q=Synchronization+Techniques+study+notes+pdf"
-              ]
-            }
-          },
-          {
-            "name": "Deadlocks and Livelocks",
-            "resources": {
-              "youtube": [
-                "https://www.youtube.com/results?search_query=Deadlocks+and+Livelocks+tutorial",
-                "https://www.youtube.com/results?search_query=Deadlocks+and+Livelocks+full+course"
-              ],
-              "documentation": [
-                "https://www.google.com/search?q=Deadlocks+and+Livelocks+official+documentation",
-                "https://www.google.com/search?q=Deadlocks+and+Livelocks+study+notes+pdf"
-              ]
-            }
-          }
+          "Indus Valley Civilization and Early Settlements",
+          "The Ancient Kingdom of Kashmir",
+          "Religious Influences: Buddhism, Hinduism, and Zoroastrianism"
+        ]
+      },
+      {
+        "name": "Medieval Kashmir",
+        "days": 7,
+        "resources": {
+          "documentation": [
+            "https://www.google.com/search?q=Medieval+Kashmir+academic+notes+pdf",
+            "https://www.google.com/search?q=Medieval+Kashmir+textbook+chapter",
+            "https://www.google.com/search?q=Medieval+Kashmir+university+lecture+notes"
+          ]
+        },
+        "subtopics": [
+          "The Mughal Period (1525-1756 CE)",
+          "Shah Miri Dynasty (1550-1561 CE) and the Rise of Islam",
+          "Aurangzeb's Persecution of Hindus and Sikhs"
+        ]
+      },
+      {
+        "name": "Modern Kashmir",
+        "days": 7,
+        "resources": {
+          "documentation": [
+            "https://www.google.com/search?q=Modern+Kashmir+academic+notes+pdf",
+            "https://www.google.com/search?q=Modern+Kashmir+textbook+chapter",
+            "https://www.google.com/search?q=Modern+Kashmir+university+lecture+notes"
+          ]
+        },
+        "subtopics": [
+          "British Colonial Rule (1846-1947 CE)",
+          "Partition and Independence (1947 CE)",
+          "Kashmir Conflict: India, Pakistan, and the UN Resolution"
+        ]
+      },
+      {
+        "name": "Contemporary Kashmir",
+        "days": 7,
+        "resources": {
+          "documentation": [
+            "https://www.google.com/search?q=Contemporary+Kashmir+academic+notes+pdf",
+            "https://www.google.com/search?q=Contemporary+Kashmir+textbook+chapter",
+            "https://www.google.com/search?q=Contemporary+Kashmir+university+lecture+notes"
+          ]
+        },
+        "subtopics": [
+          "Geopolitics of Kashmir: Indo-Pak Tensions",
+          "Humanitarian Crisis: Displacement, Human Rights, and Censorship",
+          "Kashmir's Place in Modern International Relations"
         ]
       }
     ]

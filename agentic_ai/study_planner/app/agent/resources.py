@@ -1,21 +1,11 @@
-def get_resources(topic: str):
-    """
-    Generate YouTube and documentation references for a topic.
-    """
+import urllib.parse
 
-    query = topic.replace(" ", "+")
+def get_heading_documentation(topic: str):
 
-    youtube_links = [
-        f"https://www.youtube.com/results?search_query={query}+tutorial",
-        f"https://www.youtube.com/results?search_query={query}+full+course"
+    encoded = urllib.parse.quote_plus(topic)
+
+    return [
+        f"https://www.google.com/search?q={encoded}+academic+notes+pdf",
+        f"https://www.google.com/search?q={encoded}+textbook+chapter",
+        f"https://www.google.com/search?q={encoded}+university+lecture+notes"
     ]
-
-    documentation_links = [
-        f"https://www.google.com/search?q={query}+official+documentation",
-        f"https://www.google.com/search?q={query}+study+notes+pdf"
-    ]
-
-    return {
-        "youtube": youtube_links,
-        "documentation": documentation_links
-    }

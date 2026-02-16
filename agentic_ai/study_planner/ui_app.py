@@ -6,7 +6,7 @@ BACKEND_URL = "http://127.0.0.1:8000"
 st.set_page_config(page_title="AI Study Planner", layout="wide")
 
 st.title("🎓 AI Study Planner")
-st.write("Generate structured study topics with YouTube & documentation links.")
+st.write("Generate a clean academic study roadmap with structured topics.")
 
 # ===============================
 # INPUT SECTION
@@ -47,49 +47,44 @@ if st.button("Generate Study Plan"):
 
 if "plan" in st.session_state:
 
-    plan = st.session_state["plan"]["plan"]
+    plan_data = st.session_state["plan"]
 
-    st.header("📚 Your Study Plan")
+    # compatibility safeguard
+    if "plan" in plan_data:
+        plan_data = plan_data["plan"]
 
-    for topic in plan["topics"]:
+    st.header("📚 Structured Study Roadmap")
 
-        with st.expander(f"📖 {topic['name']} ({topic['days']} days)", expanded=False):
+    for topic in plan_data["topics"]:
 
-            # -------------------------
-            # MAIN TOPIC RESOURCES
-            # -------------------------
+        st.markdown("---")
+        st.markdown(f"## 📖 {topic['name']} ({topic['days']} days)")
 
-            st.subheader("📺 YouTube Resources")
+        # -------------------------
+        # Documentation
+        # -------------------------
+        st.markdown("### 📘 Documentation to Study")
 
-            for link in topic["resources"]["youtube"]:
-                st.markdown(f"- [Watch Here]({link})")
+        docs = topic.get("resources", {}).get("documentation", [])
 
-            st.subheader("📘 Documentation")
+        if docs:
+            for link in docs:
+                st.markdown(f"- 📄 [Open Resource]({link})")
+        else:
+            st.write("No documentation available.")
 
-            for link in topic["resources"]["documentation"]:
-                st.markdown(f"- [Read Here]({link})")
+        # -------------------------
+        # Subtopics
+        # -------------------------
+        st.markdown("### 📂 Topics to Cover")
 
-            st.markdown("---")
+        subtopics = topic.get("subtopics", [])
 
-            # -------------------------
-            # SUBTOPICS
-            # -------------------------
-
-            st.subheader("📂 Subtopics")
-
-            for sub in topic["subtopics"]:
-
-                st.markdown(f"### 🔹 {sub['name']}")
-
-                st.markdown("**YouTube:**")
-                for link in sub["resources"]["youtube"]:
-                    st.markdown(f"- [Watch Here]({link})")
-
-                st.markdown("**Documentation:**")
-                for link in sub["resources"]["documentation"]:
-                    st.markdown(f"- [Read Here]({link})")
-
-                st.markdown("---")
+        if subtopics:
+            for sub in subtopics:
+                st.markdown(f"- {sub}")
+        else:
+            st.write("No subtopics available.")
 
 # ===============================
 # PROGRESS SECTION
@@ -97,15 +92,20 @@ if "plan" in st.session_state:
 
 if "plan" in st.session_state:
 
+    plan_data = st.session_state["plan"]
+
+    if "plan" in plan_data:
+        plan_data = plan_data["plan"]
+
     st.header("📊 Track Your Progress")
 
     progress = {}
 
-    for topic in st.session_state["plan"]["plan"]["topics"]:
+    for topic in plan_data["topics"]:
         status = st.selectbox(
             f"{topic['name']}",
-            ["completed", "partial", "not_done"],
-            key=topic["name"]
+            ["not_started", "in_progress", "completed"],
+            key=f"progress_{topic['name']}"
         )
         progress[topic["name"]] = status
 
@@ -117,7 +117,6 @@ if "plan" in st.session_state:
         )
 
         if response.status_code == 200:
-            st.session_state["plan"]["plan"] = response.json()["updated_plan"]
             st.success("Plan updated successfully!")
         else:
             st.error("Failed to update plan.")
