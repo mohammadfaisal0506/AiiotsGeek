@@ -1,70 +1,135 @@
 {
-  "goal": "Kashmir history",
+  "goal": "data structures",
   "days": 30,
+  "difficulty": "beginner",
   "plan": {
     "topics": [
       {
-        "name": "Ancient Kashmir",
-        "days": 7,
-        "resources": {
-          "documentation": [
-            "https://www.google.com/search?q=Ancient+Kashmir+academic+notes+pdf",
-            "https://www.google.com/search?q=Ancient+Kashmir+textbook+chapter",
-            "https://www.google.com/search?q=Ancient+Kashmir+university+lecture+notes"
-          ]
-        },
+        "name": "Introduction to Data Structures",
+        "days": 4,
         "subtopics": [
-          "Indus Valley Civilization and Early Settlements",
-          "The Ancient Kingdom of Kashmir",
-          "Religious Influences: Buddhism, Hinduism, and Zoroastrianism"
+          {
+            "name": "What are Data Structures?",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=What+are+Data+Structures%3F+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=What+are+Data+Structures%3F+tutorial"
+            }
+          },
+          {
+            "name": "Why Study Data Structures?",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Why+Study+Data+Structures%3F+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Why+Study+Data+Structures%3F+tutorial"
+            }
+          }
         ]
       },
       {
-        "name": "Medieval Kashmir",
+        "name": "Arrays and Linked Lists",
         "days": 7,
-        "resources": {
-          "documentation": [
-            "https://www.google.com/search?q=Medieval+Kashmir+academic+notes+pdf",
-            "https://www.google.com/search?q=Medieval+Kashmir+textbook+chapter",
-            "https://www.google.com/search?q=Medieval+Kashmir+university+lecture+notes"
-          ]
-        },
         "subtopics": [
-          "The Mughal Period (1525-1756 CE)",
-          "Shah Miri Dynasty (1550-1561 CE) and the Rise of Islam",
-          "Aurangzeb's Persecution of Hindus and Sikhs"
+          {
+            "name": "Array Basics",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Array+Basics+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Array+Basics+tutorial"
+            }
+          },
+          {
+            "name": "Linked List Basics",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Linked+List+Basics+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Linked+List+Basics+tutorial"
+            }
+          },
+          {
+            "name": "Traversals and Operations",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Traversals+and+Operations+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Traversals+and+Operations+tutorial"
+            }
+          }
         ]
       },
       {
-        "name": "Modern Kashmir",
-        "days": 7,
-        "resources": {
-          "documentation": [
-            "https://www.google.com/search?q=Modern+Kashmir+academic+notes+pdf",
-            "https://www.google.com/search?q=Modern+Kashmir+textbook+chapter",
-            "https://www.google.com/search?q=Modern+Kashmir+university+lecture+notes"
-          ]
-        },
+        "name": "Stacks and Queues",
+        "days": 4,
         "subtopics": [
-          "British Colonial Rule (1846-1947 CE)",
-          "Partition and Independence (1947 CE)",
-          "Kashmir Conflict: India, Pakistan, and the UN Resolution"
+          {
+            "name": "Stack Basics",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Stack+Basics+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Stack+Basics+tutorial"
+            }
+          },
+          {
+            "name": "Queue Basics",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Queue+Basics+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Queue+Basics+tutorial"
+            }
+          },
+          {
+            "name": "Implementations and Applications",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Implementations+and+Applications+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Implementations+and+Applications+tutorial"
+            }
+          }
         ]
       },
       {
-        "name": "Contemporary Kashmir",
-        "days": 7,
-        "resources": {
-          "documentation": [
-            "https://www.google.com/search?q=Contemporary+Kashmir+academic+notes+pdf",
-            "https://www.google.com/search?q=Contemporary+Kashmir+textbook+chapter",
-            "https://www.google.com/search?q=Contemporary+Kashmir+university+lecture+notes"
-          ]
-        },
+        "name": "Trees",
+        "days": 6,
         "subtopics": [
-          "Geopolitics of Kashmir: Indo-Pak Tensions",
-          "Humanitarian Crisis: Displacement, Human Rights, and Censorship",
-          "Kashmir's Place in Modern International Relations"
+          {
+            "name": "Tree Basics",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Tree+Basics+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Tree+Basics+tutorial"
+            }
+          },
+          {
+            "name": "Binary Trees",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Binary+Trees+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Binary+Trees+tutorial"
+            }
+          },
+          {
+            "name": "Balanced Trees",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Balanced+Trees+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Balanced+Trees+tutorial"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Graphs",
+        "days": 4,
+        "subtopics": [
+          {
+            "name": "Graph Basics",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Graph+Basics+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Graph+Basics+tutorial"
+            }
+          },
+          {
+            "name": "Graph Representations",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Graph+Representations+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Graph+Representations+tutorial"
+            }
+          },
+          {
+            "name": "Graph Traversals and Operations",
+            "resource": {
+              "documentation": "https://www.google.com/search?q=Graph+Traversals+and+Operations+official+documentation+guide",
+              "youtube": "https://www.youtube.com/results?search_query=Graph+Traversals+and+Operations+tutorial"
+            }
+          }
         ]
       }
     ]

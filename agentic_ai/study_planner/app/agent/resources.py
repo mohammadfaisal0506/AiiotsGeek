@@ -1,11 +1,22 @@
 import urllib.parse
 
-def get_heading_documentation(topic: str):
 
-    encoded = urllib.parse.quote_plus(topic)
+def get_resource_for_subtopic(subtopic: str):
+    """
+    Generate ONE focused resource per subtopic.
+    """
 
-    return [
-        f"https://www.google.com/search?q={encoded}+academic+notes+pdf",
-        f"https://www.google.com/search?q={encoded}+textbook+chapter",
-        f"https://www.google.com/search?q={encoded}+university+lecture+notes"
-    ]
+    encoded = urllib.parse.quote_plus(subtopic)
+
+    documentation = (
+        f"https://www.google.com/search?q={encoded}+official+documentation+guide"
+    )
+
+    youtube = (
+        f"https://www.youtube.com/results?search_query={encoded}+tutorial"
+    )
+
+    return {
+        "documentation": documentation,
+        "youtube": youtube
+    }
