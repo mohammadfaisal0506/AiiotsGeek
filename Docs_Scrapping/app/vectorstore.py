@@ -1,20 +1,34 @@
-# app/vectorstore.py
 import faiss
 import numpy as np
+import json
+import os
 
 class VectorStore:
-    def __init__(self, dim: int = 384):
-        self.index = faiss.IndexFlatL2(dim)
-        self.metadata = []
+    def __init__(self, dim=384, path="data/index"):
+        self.dim = dim
+        self.path = path
+        self.index_file = os.path.join(path, "faiss.index")
+        self.meta_file = os.path.join(path, "metadata.json")
+
+        os.makedirs(path, exist_ok=True)
+
+        if os.path.exists(self.index_file):
+            self.index = faiss.read_index(self.index_file)
+            with open(self.meta_file, "r") as f:
+                self.metadata = json.load(f)
+        else:
+            self.index = faiss.IndexFlatIP(dim)
+            self.metadata = []
 
     def add(self, embeddings, metadata):
-        embeddings = np.array(embeddings).astype("float32")
-        self.index.add(embeddings)
+        vectors = np.array(embeddings).astype("float32")
+        self.index.add(vectors)
         self.metadata.extend(metadata)
+        self.save()
 
     def search(self, query_embedding, top_k=5, doc_ids=None):
-        query_embedding = np.array([query_embedding]).astype("float32")
-        distances, indices = self.index.search(query_embedding, top_k)
+        q = np.array([query_embedding]).astype("float32")
+        scores, indices = self.index.search(q, top_k)
 
         results = []
         for idx in indices[0]:
@@ -28,3 +42,8 @@ class VectorStore:
             results.append(meta)
 
         return results
+
+    def save(self):
+        faiss.write_index(self.index, self.index_file)
+        with open(self.meta_file, "w") as f:
+            json.dump(self.metadata, f)

@@ -1,4 +1,5 @@
 import re
+import unicodedata
 
 def clean_text(text):
     if isinstance(text, list):
@@ -7,5 +8,7 @@ def clean_text(text):
     if not isinstance(text, str):
         return ""
 
-    return text.replace("\x00", " ").strip()
-
+    text = unicodedata.normalize("NFKC", text)
+    text = text.replace("\x00", " ")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()

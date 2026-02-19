@@ -1,28 +1,12 @@
-# app/retriever.py
-from app.embeddings import embed_texts
+from app.embeddings import embed_query
 
-def retrieve(query, store, top_k=5, doc_ids=None):
-    query_emb = embed_texts([query])[0]
+def retrieve(query: str, store, top_k=5, doc_ids=None):
+    query_embedding = embed_query(query)
 
-   
-    scores, indices = store.index.search(
-        query_emb.reshape(1, -1), top_k * 3
+    results = store.search(
+        query_embedding=query_embedding,
+        top_k=top_k * 3,
+        doc_ids=doc_ids
     )
 
-    results = []
-    for idx in indices[0]:
-        if idx == -1:
-            continue
-
-        meta = store.metadata[idx]
-
-       
-        if doc_ids and meta["doc_id"] not in doc_ids:
-            continue
-
-        results.append(meta)
-
-        if len(results) >= top_k:
-            break
-
-    return results
+    return results[:top_k]
